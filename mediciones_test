@@ -1,0 +1,59 @@
+
+Scheduler: Round Robin (RR)
+Test: cpubench, iobench
+Metricas: KFLOPT, IOP250T 
+Coeficiente: KFLOPT / IOP250T
+----------------------------------------------------
+Quantum 10 millones, 250 TICKS
+ 
+# cpu ; io : cpu = 341 , i/o = 130 , coef = 2,62
+
+# cpu 2; io : cpu = 189 , i/o = 67 , coef = 2,82
+
+# cpu ; io 2 : cpu = 332 , i/o = 102 , coef = 3,25
+
+# cpu 2; io 2 : cpu = 187 , i/o = 204 , coef = 0,92
+
+----------------------------------------------------
+Quantum 1 millon, 2.500 TICKS
+
+# cpu ; io : cpu = 18 , i/o = 1109 , coef = 0,016
+
+# cpu 2; io : cpu = 10 , i/o = 570 , coef = 0,018
+
+# cpu ; io 2 : cpu = 17 , i/o = 616 , coef = 0,028
+
+# cpu 2; io 2 : cpu = 13 , i/o = 433 , coef = 0,038
+
+----------------------------------------------------
+
+Scheduler: Multi-Level Feedback Queue (MLFQ) 
+Test: cpubench, iobench
+Metricas: KFLOPT, IOP250T 
+Coeficiente: KFLOPT / IOP250T
+
+----------------------------------------------------
+Quantum 10 millones, 250 TICKS
+
+# cpu ; io : cpu = 222 , io = 1963 , coef = 0,11
+
+# cpu 2; io : cpu = 101 , io = 1976 , coef = 0,05
+
+# cpu ; io 2 : cpu = 362 , io = 380, coef = 0,95
+
+# cpu 2; io 2 : cpu = 176 , io = 73 , coef = 2,41
+
+----------------------------------------------------
+Quantum 1 millon, 2.500 TICKS
+
+# cpu ; io : cpu = 22 , io = 1140 , coef = 0,019
+
+# cpu 2; io : cpu = 15 , io = 575 , coef = 0,026
+
+# cpu ; io 2 : cpu = 21 , io = 634 , coef = 0,033
+
+# cpu 2; io 2 : cpu = 15 , io = 338 , coef = 0,044
+
+----------------------------------------------------
+
+
